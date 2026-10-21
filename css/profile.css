@@ -1,0 +1,194 @@
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-300.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-300-italic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-500-italic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: block; }
+
+:root {
+  --green: #00D09E;
+  --honeydew: #F1FFF3;
+  --light-green: #DFF7E2;
+  --void: #052224;
+  --cyprus: #093030;
+  --cyprus-dark: #0E3E3E;
+  --light-blue: #6DB6FE;
+  --vivid-blue: #3299FF;
+  --ocean-blue: #0068FF;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #E9EDEA;
+  font-family: "Poppins", sans-serif;
+  color: var(--cyprus);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; }
+ul { margin: 0; padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { padding: 0; border: 0; background: none; font: inherit; cursor: pointer; }
+
+/* ---------- Screen frame (430 × 932) ---------- */
+
+.screen {
+  position: relative;
+  width: 430px;
+  height: 932px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 40px;
+  background: var(--green);
+}
+
+/* ---------- Header ---------- */
+
+.header__back {
+  position: absolute;
+  top: 68px;
+  left: 37px;
+}
+
+.header__title {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: var(--cyprus);
+}
+
+.header__bell {
+  position: absolute;
+  top: 61px;
+  left: 364px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: var(--light-green);
+}
+
+/* ---------- Sheet (light rounded panel) ---------- */
+
+.sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 70px 70px 0 0;
+  background: var(--honeydew);
+}
+
+/* ---------- Tab bar ---------- */
+
+.tabbar {
+  position: absolute;
+  top: 824px;
+  left: 0;
+  right: 0;
+  height: 108px;
+  border-radius: 70px 70px 0 0;
+  background: var(--light-green);
+}
+
+.tabbar__item {
+  position: absolute;
+  top: 26px;
+  width: 57px;
+  height: 53px;
+  border-radius: 22px;
+}
+
+.tabbar__item:nth-child(1) { left: 44px; }
+.tabbar__item:nth-child(2) { left: 115px; }
+.tabbar__item:nth-child(3) { left: 190px; }
+.tabbar__item:nth-child(4) { left: 263px; }
+.tabbar__item:nth-child(5) { left: 331px; }
+
+.tabbar__item--active { background: var(--green); }
+
+/* ---------- Profile ---------- */
+
+.sheet { top: 176px; }
+
+.profile__avatar {
+  position: absolute;
+  top: 117px;
+  left: 157px;
+  width: 117px;
+  height: 117px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile__user {
+  position: absolute;
+  top: 253px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.profile__name {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  color: var(--cyprus-dark);
+}
+
+.profile__id {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+}
+
+.profile__id b { font-weight: 600; }
+
+.menu {
+  position: absolute;
+  top: 350px;
+  left: 38px;
+}
+
+.menu__item + .menu__item { margin-top: 34px; }
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.menu__icon {
+  width: 57px;
+  height: 53px;
+  border-radius: 22px;
+}
+
+.menu__icon--light { background: var(--light-blue); }
+.menu__icon--vivid { background: var(--vivid-blue); }
+.menu__icon--ocean { background: var(--ocean-blue); }
+
+/* ---------- Mockup offsets ----------
+   The source mockup is not perfectly regular; these rules reproduce
+   its exact positions. Delete this block to get a strictly even layout. */
+
+.profile__id { transform: translateX(1px); }
