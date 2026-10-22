@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/daily.css">
+</head>
+<body>
+<div class="phone">
+
+  <div class="status">
+    <span class="time">16:04</span>
+    <img class="sicons" src="public/icons/status-icons.svg" alt="">
+  </div>
+
+  <a class="back hv" href="home.html" aria-label="Back"><img src="public/icons/arrow-back.svg" alt=""></a>
+  <h1 class="title">Analysis</h1>
+  <button class="bell hv" type="button" aria-label="Notifications"><img src="public/icons/bell.svg" alt=""></button>
+
+  <div class="stat bal">
+    <div class="lbl"><img src="public/icons/income.svg" alt="">Total Balance</div>
+    <div class="val">$7,783.00</div>
+  </div>
+  <div class="vsep"></div>
+  <div class="stat exp">
+    <div class="lbl"><img src="public/icons/expense.svg" alt="">Total Expense</div>
+    <div class="val">-$1.187.40</div>
+  </div>
+
+  <div class="meter hv" tabindex="0"><span class="fill">30%</span><span class="rest">$20,000.00</span></div>
+  <div class="note"><img src="public/icons/check.svg" alt="">30% Of Your Expenses, Looks Good.</div>
+
+  <div class="sheet"></div>
+
+  <div class="tabs" role="tablist">
+    <button class="tab hv on" type="button">Daily</button>
+    <button class="tab hv" type="button">Weekly</button>
+    <button class="tab hv" type="button">Monthly</button>
+    <button class="tab hv" type="button">Year</button>
+  </div>
+
+  <div class="chart-card">
+    <div class="ct">Income &amp; Expenses</div>
+    <button class="cbtn s hv" type="button" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="#052224" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg></button>
+    <button class="cbtn c hv" type="button" aria-label="Calendar"><svg viewBox="0 0 24 24" fill="none" stroke="#052224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></button>
+    <div class="graph">
+      <span class="yl" style="top:11px">15k</span><i class="gl" style="top:11px"></i>
+      <span class="yl" style="top:42px">10k</span><i class="gl" style="top:42px"></i>
+      <span class="yl" style="top:76px">5k</span><i class="gl" style="top:76px"></i>
+      <span class="yl" style="top:109px">1k</span><i class="gl" style="top:109px"></i>
+      <i class="axis"></i>
+      <i class="bar g" style="left:28.4px;--h:56px;--d:0ms"></i><i class="bar b" style="left:39.4px;--h:86px;--d:40ms"></i>
+      <i class="bar g" style="left:68.8px;--h:17px;--d:70ms"></i><i class="bar b" style="left:79.8px;--h:47px;--d:110ms"></i>
+      <i class="bar g" style="left:109.2px;--h:83px;--d:140ms"></i><i class="bar b" style="left:120.2px;--h:50px;--d:180ms"></i>
+      <i class="bar g" style="left:149.6px;--h:10px;--d:210ms"></i><i class="bar b" style="left:160.6px;--h:62px;--d:250ms"></i>
+      <i class="bar g" style="left:190.0px;--h:100px;--d:280ms"></i><i class="bar b" style="left:201.0px;--h:91px;--d:320ms"></i>
+      <i class="bar g" style="left:230.4px;--h:30px;--d:350ms"></i><i class="bar b" style="left:241.4px;--h:8px;--d:390ms"></i>
+      <i class="bar g" style="left:270.8px;--h:32px;--d:420ms"></i><i class="bar b" style="left:281.8px;--h:73px;--d:460ms"></i>
+      <span class="dl" style="left:36.9px">Mon</span>
+      <span class="dl" style="left:77.3px">Tue</span>
+      <span class="dl" style="left:117.7px">Wed</span>
+      <span class="dl" style="left:158.1px">Thu</span>
+      <span class="dl" style="left:198.5px">Fri</span>
+      <span class="dl" style="left:238.9px">Sat</span>
+      <span class="dl" style="left:279.3px">Sun</span>
+    </div>
+  </div>
+
+  <div class="ie in hv" tabindex="0"><img src="public/icons/income.svg" alt=""><div class="k">Income</div><div class="v">$4,120.00</div></div>
+  <div class="ie out hv" tabindex="0"><img src="public/icons/expense.svg" alt=""><div class="k">Expense</div><div class="v">$1.187.40</div></div>
+  <div class="targets">My Targets</div>
+
+  <nav class="nav">
+    <a class="ni" href="home.html" aria-label="Home"><img src="public/icons/nav-home.svg" alt=""></a>
+    <a class="ni active" href="daily.html" aria-label="Analysis"><img src="public/icons/nav-analysis.svg" alt=""></a>
+    <a class="ni" href="transactions.html" aria-label="Transactions"><img src="public/icons/nav-transactions.svg" alt=""></a>
+    <a class="ni" href="categories.html" aria-label="Categories"><img src="public/icons/nav-categories.svg" alt=""></a>
+    <a class="ni" href="profile.html" aria-label="Profile"><img src="public/icons/nav-profile.svg" alt=""></a>
+  </nav>
+  <div class="home-ind"></div>
+</div>
+<script>
+  document.querySelectorAll('.tab').forEach(function (t) {
+    t.addEventListener('click', function () {
+      document.querySelectorAll('.tab').forEach(function (x) { x.classList.remove('on'); });
+      t.classList.add('on');
+    });
+  });
+</script>
+</body>
+</html>
