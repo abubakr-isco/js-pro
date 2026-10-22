@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Categories</title>
+  <link rel="stylesheet" href="./css/categories.css">
+</head>
+<body>
+  <main class="screen categories">
+    <div class="status-bar">
+      <span class="status-bar__time">16:04</span>
+      <img class="status-bar__icons" src="./public/icons/status-icons.svg" width="57" height="14" alt="">
+    </div>
+
+    <header class="header">
+      <a class="header__back" href="#" aria-label="Back"><img src="./public/icons/arrow-back.svg" width="21" height="18" alt=""></a>
+      <h1 class="header__title">Categories</h1>
+      <button class="header__bell" type="button" aria-label="Notifications"><img src="./public/icons/bell.svg" width="30" height="30" alt=""></button>
+    </header>
+
+    <section class="summary">
+      <div class="summary__col summary__col--balance">
+        <p class="summary__label"><img src="./public/icons/income.svg" width="12" height="12" alt="">Total Balance</p>
+        <p class="summary__amount">$7,783.00</p>
+      </div>
+      <div class="summary__divider"></div>
+      <div class="summary__col summary__col--expense">
+        <p class="summary__label"><img src="./public/icons/expense.svg" width="12" height="12" alt="">Total Expense</p>
+        <p class="summary__amount summary__amount--expense">-$1.187.40</p>
+      </div>
+    </section>
+
+    <div class="progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+      <span class="progress__percent">30%</span>
+      <div class="progress__rest"></div>
+      <span class="progress__goal">$20,000.00</span>
+    </div>
+
+    <p class="hint"><img src="./public/icons/check.svg" width="12" height="12" alt="">30% Of Your Expenses, Looks Good.</p>
+
+    <section class="sheet"></section>
+
+    <ul class="category-grid">
+      <li class="category category--active"><img class="category__icon" src="./public/icons/food.svg" alt=""><span class="category__label">Food</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/transport.svg" alt=""><span class="category__label">Transport</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/medicine.svg" alt=""><span class="category__label">Medicine</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/groceries.svg" alt=""><span class="category__label">Groceries</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/rent.svg" alt=""><span class="category__label">Rent</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/gifts.svg" alt=""><span class="category__label">Gifts</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/savings.svg" alt=""><span class="category__label">Savings</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/entertainment.svg" alt=""><span class="category__label">Entertainment</span></li>
+      <li class="category"><img class="category__icon" src="./public/icons/more.svg" alt=""><span class="category__label">More</span></li>
+    </ul>
+
+    <nav class="tabbar">
+      <a class="tabbar__item" href="home.html" aria-label="Home"><img src="./public/icons/nav-home.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item" href="statistic.html" aria-label="Statistic"><img src="./public/icons/nav-analysis.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item" href="#" aria-label="Transactions"><img src="./public/icons/nav-transactions.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item tabbar__item--active" href="categories.html" aria-label="Categories" aria-current="page"><img src="./public/icons/nav-categories.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item" href="profile.html" aria-label="Profile"><img src="./public/icons/nav-profile.svg" width="57" height="53" alt=""></a>
+    </nav>
+  </main>
+</body>
+</html>

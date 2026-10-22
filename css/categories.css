@@ -1,0 +1,286 @@
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-300.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-500.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-600.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-300-italic.woff2") format("woff2"); font-weight: 300; font-style: italic; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: block; }
+@font-face { font-family: "Poppins"; src: url("../fonts/poppins-500-italic.woff2") format("woff2"); font-weight: 500; font-style: italic; font-display: block; }
+
+:root {
+  --green: #00D09E;
+  --honeydew: #F1FFF3;
+  --light-green: #DFF7E2;
+  --void: #052224;
+  --cyprus: #093030;
+  --cyprus-dark: #0E3E3E;
+  --light-blue: #6DB6FE;
+  --vivid-blue: #3299FF;
+  --ocean-blue: #0068FF;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #E9EDEA;
+  font-family: "Poppins", sans-serif;
+  color: var(--cyprus);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; }
+ul { margin: 0; padding: 0; list-style: none; }
+a { color: inherit; text-decoration: none; }
+button { padding: 0; border: 0; background: none; font: inherit; cursor: pointer; }
+
+/* ---------- Screen frame (430 × 932) ---------- */
+
+.screen {
+  position: relative;
+  width: 430px;
+  height: 932px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 40px;
+  background: var(--green);
+}
+
+/* ---------- Status bar ---------- */
+
+.status-bar__time {
+  position: absolute;
+  top: 8px;
+  left: 37px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.status-bar__icons {
+  position: absolute;
+  top: 8px;
+  left: 336px;
+}
+
+/* ---------- Header ---------- */
+
+.header__back {
+  position: absolute;
+  top: 68px;
+  left: 37px;
+}
+
+.header__title {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: var(--cyprus);
+}
+
+.header__bell {
+  position: absolute;
+  top: 61px;
+  left: 364px;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: var(--light-green);
+}
+
+/* ---------- Sheet (light rounded panel) ---------- */
+
+.sheet {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 70px 70px 0 0;
+  background: var(--honeydew);
+}
+
+/* ---------- Tab bar ---------- */
+
+.tabbar {
+  position: absolute;
+  top: 824px;
+  left: 0;
+  right: 0;
+  height: 108px;
+  border-radius: 70px 70px 0 0;
+  background: var(--light-green);
+}
+
+.tabbar__item {
+  position: absolute;
+  top: 26px;
+  width: 57px;
+  height: 53px;
+  border-radius: 22px;
+}
+
+.tabbar__item:nth-child(1) { left: 44px; }
+.tabbar__item:nth-child(2) { left: 115px; }
+.tabbar__item:nth-child(3) { left: 190px; }
+.tabbar__item:nth-child(4) { left: 263px; }
+.tabbar__item:nth-child(5) { left: 331px; }
+
+.tabbar__item--active { background: var(--green); }
+
+/* ---------- Categories ---------- */
+
+.sheet { top: 281px; }
+
+.summary__col {
+  position: absolute;
+  top: 139px;
+}
+
+.summary__col--balance { left: 60px; }
+.summary__col--expense { left: 249px; }
+
+.summary__label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--cyprus);
+}
+
+.summary__amount {
+  margin: 7px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--honeydew);
+}
+
+.summary__amount--expense {
+  font-weight: 600;
+  color: var(--ocean-blue);
+}
+
+.summary__divider {
+  position: absolute;
+  top: 136px;
+  left: 215px;
+  width: 1px;
+  height: 42px;
+  background: var(--light-green);
+}
+
+.progress {
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  width: 330px;
+  height: 27px;
+  border-radius: 13.5px;
+  background: var(--void);
+  line-height: 27px;
+}
+
+.progress__percent {
+  position: absolute;
+  left: 21px;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  color: var(--honeydew);
+}
+
+.progress__rest {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 69px;
+  border-radius: 13.5px;
+  background: var(--honeydew);
+}
+
+.progress__goal {
+  position: absolute;
+  right: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--void);
+}
+
+.hint {
+  position: absolute;
+  top: 237px;
+  left: 59.5px;
+  display: flex;
+  align-items: flex-start;
+  gap: 9.5px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  color: var(--void);
+}
+
+.hint img { margin-top: 5.5px; }
+
+.category-grid {
+  position: absolute;
+  top: 314px;
+  left: 37px;
+  display: grid;
+  grid-template-columns: repeat(3, 105px);
+  grid-template-rows: 169px 162px auto;
+  column-gap: 21px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.category__icon {
+  width: 105px;
+  height: 97.6316px;
+  border-radius: 25.7895px;
+  background: var(--light-blue);
+}
+
+.category--active .category__icon { background: var(--ocean-blue); }
+
+.category__label { margin-top: 3.5px; }
+
+/* ---------- Mockup offsets ----------
+   The source mockup is not perfectly regular; these rules reproduce
+   its exact positions. Delete this block to get a strictly even layout. */
+
+.header__title { transform: translateX(-6px); }
+
+.tabbar__item--active { top: 25px; }
+.tabbar__item--active img { margin-top: 1px; }
+
+.summary__col--expense .summary__label { gap: 7px; margin-top: 1px; }
+.summary__col--expense .summary__label img { transform: translateY(-1px); }
+.summary__col--expense .summary__amount { margin-top: 6px; }
+
+.category:nth-child(1) .category__label { transform: translateX(-6px); }
+.category:nth-child(5) .category__icon { transform: translateY(1px); }
+.category:nth-child(8) { transform: translateX(3px); }
+.category:nth-child(n+7) .category__label { margin-top: 6.5px; }

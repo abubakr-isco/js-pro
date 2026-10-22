@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+  <main class="screen profile">
+    <header class="header">
+      <a class="header__back" href="#" aria-label="Back"><img src="./public/icons/arrow-back.svg" width="21" height="18" alt=""></a>
+      <h1 class="header__title">Profile</h1>
+      <button class="header__bell" type="button" aria-label="Notifications"><img src="./public/icons/bell.svg" width="30" height="30" alt=""></button>
+    </header>
+
+    <section class="sheet"></section>
+
+    <img class="profile__avatar" src="./public/images/avatar.jpg" alt="John Smith">
+
+    <div class="profile__user">
+      <h2 class="profile__name">John Smith</h2>
+      <p class="profile__id"><b>ID:</b> 25030024</p>
+    </div>
+
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu__link" href="#">
+          <img class="menu__icon menu__icon--light" src="./public/icons/user.svg" alt="">Edit Profile
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">
+          <img class="menu__icon menu__icon--vivid" src="./public/icons/shield.svg" alt="">Security
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">
+          <img class="menu__icon menu__icon--ocean" src="./public/icons/gear.svg" alt="">Setting
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">
+          <img class="menu__icon menu__icon--light" src="./public/icons/help.svg" alt="">Help
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#">
+          <img class="menu__icon menu__icon--vivid" src="./public/icons/logout.svg" alt="">Logout
+        </a>
+      </li>
+    </ul>
+
+    <nav class="tabbar">
+      <a class="tabbar__item" href="home.html" aria-label="Home"><img src="./public/icons/nav-home.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item" href="statistic.html" aria-label="Statistic"><img src="./public/icons/nav-analysis.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item" href="#" aria-label="Transactions"><img src="./public/icons/nav-transactions.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item" href="categories.html" aria-label="Categories"><img src="./public/icons/nav-categories.svg" width="57" height="53" alt=""></a>
+      <a class="tabbar__item tabbar__item--active" href="profile.html" aria-label="Profile" aria-current="page"><img src="./public/icons/nav-profile.svg" width="57" height="53" alt=""></a>
+    </nav>
+  </main>
+</body>
+</html>
