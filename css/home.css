@@ -11,7 +11,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   min-height: 100vh; display: flex; justify-content: center; align-items: center;
-  background: #1f1f23; font-family: 'Poppins', sans-serif; color: var(--ink);
+  background: #000000; font-family: 'Poppins', sans-serif; color: var(--ink);
 }
 .phone {
   position: relative; width: 430px; height: 932px; opacity: 1;

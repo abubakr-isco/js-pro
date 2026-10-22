@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/transaction.css?v=3">
+</head>
+<body>
+  <div class="screen">
+
+    <div class="status">
+      <span class="status__time">16:04</span>
+      <span class="ic ic--status" aria-hidden="true"></span>
+    </div>
+
+    <header class="header">
+      <a class="back" href="home.html" aria-label="Back"><span class="ic ic--back" aria-hidden="true"></span></a>
+      <h1 class="title">Transaction</h1>
+      <a class="bell" href="#" aria-label="Notifications"><span class="ic ic--bell" aria-hidden="true"></span></a>
+    </header>
+
+    <section class="balance">
+      <p class="balance__label">Total Balance</p>
+      <p class="balance__value">$7,783.00</p>
+    </section>
+
+    <section class="summary">
+      <div class="summary__card">
+        <span class="summary__icon"><span class="ic ic--income" aria-hidden="true"></span></span>
+        <p class="summary__label">Income</p>
+        <p class="summary__value">$4,120.00</p>
+      </div>
+      <div class="summary__card">
+        <span class="summary__icon"><span class="ic ic--expense" aria-hidden="true"></span></span>
+        <p class="summary__label">Expense</p>
+        <p class="summary__value summary__value--blue">$1.187.40</p>
+      </div>
+    </section>
+
+    <main class="sheet">
+
+      <div class="month">
+        <h2 class="month__name">April</h2>
+        <a class="calendar" href="#" aria-label="Calendar"><span class="ic ic--calendar" aria-hidden="true"></span></a>
+      </div>
+
+      <ul class="list">
+        <li class="item row-1">
+          <div class="item__icon item__icon--light"><span class="ic ic--salary" aria-hidden="true"></span></div>
+          <div class="item__info">
+            <p class="item__name">Salary</p>
+            <p class="item__date">18:27 - April 30</p>
+          </div>
+          <span class="item__line"></span>
+          <p class="item__category">Monthly</p>
+          <span class="item__line"></span>
+          <p class="item__amount item__amount--dark">$4.000,00</p>
+        </li>
+
+        <li class="item row-2">
+          <div class="item__icon item__icon--mid"><span class="ic ic--groceries" aria-hidden="true"></span></div>
+          <div class="item__info">
+            <p class="item__name">Groceries</p>
+            <p class="item__date">17:00 - April 24</p>
+          </div>
+          <span class="item__line"></span>
+          <p class="item__category">Pantry</p>
+          <span class="item__line"></span>
+          <p class="item__amount">-$100,00</p>
+        </li>
+
+        <li class="item row-3">
+          <div class="item__icon item__icon--dark"><span class="ic ic--rent" aria-hidden="true"></span></div>
+          <div class="item__info">
+            <p class="item__name">Rent</p>
+            <p class="item__date">8:30 - April 15</p>
+          </div>
+          <span class="item__line"></span>
+          <p class="item__category">Rent</p>
+          <span class="item__line"></span>
+          <p class="item__amount">-$674,40</p>
+        </li>
+
+        <li class="item row-4">
+          <div class="item__icon item__icon--mid"><span class="ic ic--transport" aria-hidden="true"></span></div>
+          <div class="item__info">
+            <p class="item__name">Transport</p>
+            <p class="item__date">7:30 - April 08</p>
+          </div>
+          <span class="item__line"></span>
+          <p class="item__category">Fuel</p>
+          <span class="item__line"></span>
+          <p class="item__amount">-$4,13</p>
+        </li>
+      </ul>
+
+      <h2 class="month__name month__name--second">March</h2>
+
+      <ul class="list">
+        <li class="item row-5">
+          <div class="item__icon item__icon--light"><span class="ic ic--food" aria-hidden="true"></span></div>
+          <div class="item__info">
+            <p class="item__name">Food</p>
+            <p class="item__date">19:30 - March 31</p>
+          </div>
+          <span class="item__line"></span>
+          <p class="item__category">Dinner</p>
+          <span class="item__line"></span>
+          <p class="item__amount">-$70,40</p>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav">
+      <a class="nav__link nav__link--home" href="home.html" aria-label="Home">
+        <span class="ic ic--nav-home" aria-hidden="true"></span>
+      </a>
+      <a class="nav__link nav__link--search" href="daily.html" aria-label="Analysis">
+        <span class="ic ic--nav-search" aria-hidden="true"></span>
+      </a>
+      <a class="nav__link nav__link--active" href="transaction.html" aria-label="Transaction">
+        <span class="ic ic--nav-arrows" aria-hidden="true"></span>
+      </a>
+      <a class="nav__link nav__link--layers" href="categories.html" aria-label="Categories">
+        <span class="ic ic--nav-layers" aria-hidden="true"></span>
+      </a>
+      <a class="nav__link nav__link--person" href="profile.html" aria-label="Profile">
+        <span class="ic ic--nav-person" aria-hidden="true"></span>
+      </a>
+    </nav>
+
+  </div>
+</body>
+</html>

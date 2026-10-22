@@ -28,7 +28,7 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: #E9EDEA;
+  background: #000000;
   font-family: "Poppins", sans-serif;
   color: var(--cyprus);
   -webkit-font-smoothing: antialiased;
